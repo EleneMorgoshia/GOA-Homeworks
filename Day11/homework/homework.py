@@ -1,4 +1,5 @@
 #group4:sololear- functions]+
+
 #group102:
 #1)გადააკეთეთ ეს კოდი ისე,რომ მიიღოთ 6 და 15
 #my_str="nika 11 keshelava"
