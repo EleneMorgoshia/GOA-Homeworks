@@ -20,7 +20,7 @@ print(group_members[1:5])
 
 #homework3
 fruits_plus_one_vegetable=["banana","apple","orange","potato","cucumber","grapes"]
-fruits_plus_one_vegetable[4]="Pear"  #on the left should write the valur of the list (the one you want to change) and on the right, you should write new(changed) value
+fruits_plus_one_vegetable[4]="Pear"  #on the left should write the value of the list (the one you want to change) and on the right, you should write new(changed) value
 print(fruits_plus_one_vegetable)
 
 #-------------------------------
