@@ -22,7 +22,7 @@ exitonclick()
 # #ჯამში უნდა გამოვუდეს მაგ:!n8391k"
 import random
 my_arr=[]
-chars=list("abcdefghijklmnopqrstuvwrandom_studentyz")
+chars=list("abcdefghijklmnopqrstuvwrandomstudentyz")
 symbols=list("#$%^&*")
 numbers=list("0123456789")
 for i in range(9):
