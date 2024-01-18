@@ -1,8 +1,8 @@
-# #group4:
-# #working on Codewars' tasks
-# #--------------------------
-# #task1:
-# #This funcion counts how many times a character appears in the string
+#group4:
+#working on Codewars' tasks
+#--------------------------
+#task1:
+#This funcion counts how many times a character appears in the string
 def str_count(str,char): #we defined a function named-str_count
                         #and we created two parameters
     list=[] #we created an empty list
@@ -14,7 +14,7 @@ def str_count(str,char): #we defined a function named-str_count
 
 print(str_count("hello","l")) # we call the function and pass two arguments
 
-# #better code
+#better code
 def str_count_chad(str,my_char): #we defined function called- str_count_chad. and we created two parameters
     counter = 0 #we created variable which equals to 0 
     for char in str: #we did  a for loop for our string
@@ -23,9 +23,9 @@ def str_count_chad(str,my_char): #we defined function called- str_count_chad. an
     return counter #this function returns integer ( counter)
 
 print(str_count_chad("hello",'l')) # we call this function and pass two arguments
-#-------------------------------------
-#task2:
-#This function counts sheeps in the list . (True means present)
+# -------------------------------------
+# task2:
+# This function counts sheeps in the list . (True means present)
 def count_sheeps(sheep):# we defined function named-count_sheeps.
                        # and crete one parameter 'sheep'(list)
     amount_of_sheeps= 0 #we created variable named- amount_of_sheeps. It equals to 0
@@ -97,7 +97,7 @@ def is_divisible(n,x,y):
     
 print(is_divisible(8,3,4))
 
-#or
+# #or
 def is_divisible(n,x,y):
     if n % x == 0 and n % y == 0:
         return True
@@ -144,6 +144,107 @@ def sum_array(a):
     return sum(a)
 
 print(sum_array([]))
-#----------------------------------------------
+# ----------------------------------------------
 #task4:
+#Given a set of numbers, return the additive 
+#inverse of each. Each positive becomes negatives,
+# and the negatives become positives.
+#invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
+#invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
+#invert([]) == []
+def invert(lst):
+    new_lst=[]
+    if len(lst) == 0:
+        return lst
+    for i in range(len(lst)):
+            new_lst.append( lst[i]*-1)
+    return new_lst
+
+print(invert([]))
+#----------------------------------------
+#task5:
+#Create a function which answers the question "Are you playing banjo?".
+#If your name starts with the letter "R" or lower case "r", you are playing banjo!
+#The function takes a name as its only argument, and returns one of the following strings:
+#(are_you_playing_banjo("martin"), "martin does not play banjo");
+#(are_you_playing_banjo("Rikke"), "Rikke plays banjo");
+def are_you_playing_banjo(name):
+        if name[0] == "R" or name[0] == "r":
+            return "{} plays banjo".format(name)
+        return "{} does not play banjo".format(name)
+
+print(are_you_playing_banjo("rolf"))
+#-----------------------------------
+#task 6:
+#Write a function which calculates the average of the numbers
+# in a given list.
+#Note: Empty arrays should return 0.
+#(find_average([1, 2, 3],2)
+def find_average(numbers):
+    if len(numbers) == 0:
+        return 0
+    sum = 0
+    average_of_the_numbers = 0
+    for i in range(len(numbers)):
+        sum += numbers[i]
+        average_of_the_numbers = sum/(len(numbers))
+    return average_of_the_numbers
+
+
+print(find_average([1,2]))
+#-----------------------------
+#task 7:
+#Given a string of digits, you should replace 
+#any digit below 5 with '0' and any digit 5 and 
+#above with '1'. Return the resulting string.
+#Note: input will never be an empty string
+#["01011110001100111", "45385593107843568"]
+def fake_bin(x):
+    new_str = ''
+    for i in range(len(x)):
+        if int(x[i]) < 5:
+            variable_for_adding_zero_in_new_str = '0'
+            new_str += variable_for_adding_zero_in_new_str
+        elif int(x[i]) >= 5:
+            variable_for_adding_one_in_new_str = '1'
+            new_str += variable_for_adding_one_in_new_str
+    return new_str
+
+print(fake_bin("45385593107843568"))
+
+#better version
+def fake_bin(x):
+    final_str = ''
+    for char in x:
+        if int(char) < 5:
+            final_str += '0'
+        elif int(char) >= 5:
+            final_str += '1'
+    return final_str
+
+print(fake_bin("45385593107843568"))
+#----------------------------
+#kahoot 1
+#1)2-yellow+
+#2)2-blue+
+#3)8-blue+
+#4)10-blue- (არასწორად დავვთვალე:( )
+#5)35-yellow+
+#6)araferi-green+
+#7)3-red+
+#8)14-blue+
+#-----------------------------
+#kahoot 2:
+#1)კაცი შვილმა არ იცის-green+
+#2)-(არასწორად ეწერა პრინტში სიტყვა)
+#3)32-green - (print ფუნქცია ვაფშე არ ეწერა!!)
+#4)0- blue+
+#5)4-green+
+#6)32-green- correct answer-24-red
+#7)-1-yellow+
+#8)1-blue+
+#9)-26 -red+
+#10)-1-green+
+#11)125-red+
+#12)araferi-yellow - corret answer =
 
