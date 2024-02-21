@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(241, 236, 241);
+}
+
+.CV-pic{
+    border-radius: 50%;
+    max-width: 320 px;
+    float:left;
+
+}

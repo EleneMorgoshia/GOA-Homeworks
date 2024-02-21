@@ -1,0 +1,23 @@
+body{
+    background-color: yellow;
+    background-image: url(/Day18/images/GOA.jpg);
+}
+
+
+p{
+    color:  blue;
+    background-color: green;
+}  /*ყველა პარაგრაფი გალურჯდება */
+
+b{
+    color:red;
+}
+
+h1{
+    color: purple;
+}
+.gamarjoba{
+    color: yellow ;
+    background-color: red;
+
+}

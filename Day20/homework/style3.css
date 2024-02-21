@@ -1,0 +1,60 @@
+body{
+    color:white;
+    background-color: black;
+}
+
+p{
+    color: white;
+}
+h2{
+    color:white;
+}
+
+#first_name{
+    color:red;
+}
+
+.name{
+    color:white;
+}
+.last_name{
+    color:white;
+}
+.pic-1{
+    border-radius: 45%;
+}
+
+.pic-2{
+    border-radius: 50%;
+}
+.pic-3{
+    border-radius: 50%;
+}
+img{
+    border-radius: 50%;
+}
+.pic-4{
+    border-radius: 25%;
+}
+.pic-5{
+    border-radius: 25%;
+}
+.pic-6{
+    border-radius: 25%;
+}
+
+.pic-7{
+    border-radius: 25%;
+}
+.pic-8{
+    border-radius: 25%;
+}
+
+.pic-9{
+    border-radius: 20%;
+}
+.pic-10{
+    border-radius: 25%;
+    max-width: 320 px;
+    float:left;
+}

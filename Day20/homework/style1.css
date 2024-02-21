@@ -1,0 +1,9 @@
+.img{
+    border-radius: 50%;
+    max-width: 320 px;
+    float:left;
+}
+
+body{
+    background-color: rgb(217, 201, 217);
+}

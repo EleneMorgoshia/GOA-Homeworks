@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <style>
+           .saxeli{
+            /* კონკრეტულად დაჯგუფებული ელემენტების გასტილვა .(არ დაგაიწყდეს '.' კლასის სახელის წინ) */
+            color:red;
+             }
+             
+             /* id-ის შემთხვევაში ვიყენებთ '#' სიმბოლოს. */
+             #main-title{
+                color:green;
+             }
+       </style>
+    </header>
+
+    <main>
+        <!--მე მინდა რომ რამდენიმე ელემენტს ჰქონდეს ერთიდაიგივე სტილი, ამისთვის გამოვიყენებ კლასს ,რომ დავაჯგუფო ისინი -->
+        <p class="saxeli">Elene</p>
+        <p class="saxeli">Ioane</p>
+        <p class="saxeli">Erekle</p>
+
+        <!--როდესაც გაქვს საიტზე ისეთი ელემენტი, რომლის სტილიც უნიკალურია, იყენებ id-ს გასტილვისტვის -->
+        <h1 id="main-title">Hello</h1>
+
+        <!--შესატანი ფორმების შესაქმნელად, სადაც მომხმარებელს შეეძლება თავისი მონაცემების შეტანა და გაგზავნა, აუცილებელია გამოვიყენოთ form კონტეინერ ტეგი-->
+        <form>
+            <!--label(ეტიკეტი) რომ დავაკავშიროთ კონკრეტულ input წყაროსთან საჭიროა გვქონდეს id, რომელსაც for-ის მეშვეობით დავაკავშირებთ სასურველ input-თან -->
+            <label for="fullname">Please  enter your fullname:</label>
+            <input id="fullname" type="text" placeholder="Enter Your Fullname" required> 
+            <br>
+            <br>
+            <label for="Elposta">Please Enter Your Email:</label>
+            <input id="Elposta" type="email" placeholder="Enter Your Email" required>
+            <br>
+            <br>
+            <label for="paroli">Enter Your Password</label>
+            <input id="paroli"type="password" placeholder="Enter Your Password" required>
+           
+            <br>
+            <br> 
+            <label for="checki">Agree this document:</label>
+            <input id="checki" type="checkbox" value="Click here">
+            <br>
+            <br>
+            <input type="reset">
+        </form>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
